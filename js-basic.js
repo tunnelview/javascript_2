@@ -73,4 +73,9 @@ console.log(c);
 // interface
 // Function
 
+// important note - ***** let, var, const are all pre-defined key words that lets you
+// define the variable
+
+const obj = {};
+
 console.log(c);
