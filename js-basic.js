@@ -23,3 +23,6 @@ console.log(name, phone, dob);
 // console.log(dob);
 
 // console is the object, and log is the method to print the item
+
+/* if a variable is not defined, or type casted as 'var' then by default
+it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
