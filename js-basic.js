@@ -35,3 +35,21 @@ const c = a + b;
 // In Javascript the code runs from top to bottom and then right to left
 //
 console.log(c);
+// const c = a + b;
+// const c = a - b;
+// const c = a * b;
+//const c = a / b;
+// const c = a ** 2;
+// const c = b % a;
+
+// increment operator
+// a = a + 1;// 5+1
+// a = a + 1;// 6+1
+// can also be written as
+// a++;
+
+// decrement
+// a--; can also be written as a = a - 1;
+// a--;
+
+console.log(c);
