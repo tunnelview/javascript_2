@@ -52,4 +52,21 @@ console.log(c);
 // a--; can also be written as a = a - 1;
 // a--;
 
+// primitive type data types -
+// int,
+// double,
+// string,
+// float,
+// short,
+// long,
+// byte
+// the reason why it is called primitive type is because it occupies a specific
+// place in the momory. This is also one of the reason why Java is a very strongly
+// typed language.
+
+// Referential data types
+// link list
+// array
+// interface
+
 console.log(c);
