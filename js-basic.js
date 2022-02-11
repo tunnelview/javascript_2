@@ -26,3 +26,12 @@ console.log(name, phone, dob);
 
 /* if a variable is not defined, or type casted as 'var' then by default
 it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
+
+//JS operators - Arithmetic + - * / % ** ++ --
+let a = 5;
+let b = 2;
+
+const c = a + b;
+// In Javascript the code runs from top to bottom and then right to left
+//
+console.log(c);
