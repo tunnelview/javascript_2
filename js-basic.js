@@ -55,7 +55,7 @@ console.log(c);
 // primitive type data types -
 // int,
 // double,
-// string,
+// string, written in strings
 // float,
 // short,
 // long,
@@ -64,9 +64,13 @@ console.log(c);
 // place in the momory. This is also one of the reason why Java is a very strongly
 // typed language.
 
+/* Undefined - knot defined in system memory
+ Null - dined in system momory but no value */
+
 // Referential data types
 // link list
 // array
 // interface
+// Function
 
 console.log(c);
