@@ -76,6 +76,46 @@ console.log(c);
 // important note - ***** let, var, const are all pre-defined key words that lets you
 // define the variable
 
-const obj = {};
+// variable naming
+// firstname- smallcase, FirstName- pascal, firstName - camelcasing, FIRSTNAME - uppercase
 
-console.log(c);
+// const john = {
+//   name: "John",
+//   age: 30,
+// };
+
+// const john1 = john;
+
+// john.age = 40;
+// console.log(john, age);
+// console.log(john1);
+
+// // console.log(c);
+
+// // console.log(a, b);
+// console.log(person);
+
+//Array- Array always have squared brackets
+// Array is always referential
+// Array always occupies consecutive space/blocks in the memory
+// const john = { name: "john" };
+// const arg = ["prem", 4566, [454, 45], true, john];
+// // const arg = ["prem", 4566, [454, 45], true, { name: "john" }];
+// arg[4] = "sam";
+// console.log(arg);
+// // In array  we don't have key and value, we only have values, seperated by a comma.
+// console.log(arg[4]);
+
+function hello() {
+  const a = 4 + 6;
+  console.log(a);
+}
+
+console.log(hello);
+console.log(hello());
+// console.log(hello()); - This is invoking the function. Code runs from
+// top to bottom, and code only runs once.
+
+// console.log(hello); this is only calling the function, not invoking, which
+// basically means that it will not evaluate or run anything within the function.
+// in order to run the code, we need to invoke the function by '()'.
