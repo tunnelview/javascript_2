@@ -1,7 +1,7 @@
 // single line comment
 /* double line comment*/
 
-console.log("You are hacked");
+// console.log("You are hacked");
 // creating variables
 // Rules to create the variables
 // Any varable to be created or defined, we need to use these keywords
@@ -10,12 +10,12 @@ console.log("You are hacked");
 /* In programming, we want to write the code from var or in other terms (ambiguity)
 to surety(predictability). Both take the same memory.*/
 
-var name = "John";
-let phone = 41444445;
-const dob = "12/12/20";
+// var name = "John";
+// let phone = 41444445;
+// const dob = "12/12/20";
 // after line 15, go to the browser, click console, type name - "John" should appear
 
-console.log(name, phone, dob);
+// console.log(name, phone, dob);
 // line 18 shows multiple variables written in one line
 // console.log(name);
 // console.log(phone);
@@ -28,13 +28,13 @@ console.log(name, phone, dob);
 it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 //JS operators - Arithmetic + - * / % ** ++ --
-let a = 5;
-let b = 2;
+// let a = 5;
+// let b = 2;
 
-const c = a + b;
-// In Javascript the code runs from top to bottom and then right to left
-//
-console.log(c);
+// const c = a + b;
+// // In Javascript the code runs from top to bottom and then right to left
+// //
+// console.log(c);
 // const c = a + b;
 // const c = a - b;
 // const c = a * b;
@@ -164,16 +164,31 @@ console.log(c);
 //Logical operators - && || ! Ternary
 // Conditional statement  - if, else, else if, switch
 
-const hungry = false;
+// const hungry = false;
 // if (hungry) {
 // }
 // console.log("Eat Pizza");
 
-if (age >= 18) {
-  console.log("Welcome to the party");
-} else {
-  console.log("go home kiddo");
-}
+// if (age >= 18) {
+//   console.log("Welcome to the party");
+// } else {
+//   console.log("go home kiddo");
+// }
 
-// age >= 18 ? console.log("welcome to the party") : console.log("go home kiddo")
-// Line 178 is the ternary way of writing if else using ternary
+// // age >= 18 ? console.log("welcome to the party") : console.log("go home kiddo")
+// // Line 178 is the ternary way of writing if else using ternary
+
+// //else if
+
+const animal = "bird";
+if (animal === "cat") {
+  console.log(meow);
+} else if (animal === "dog") {
+  console.log("woof woof");
+} else if (animal === "bird") {
+  console.log("twit");
+}
+// else(animal = "")
+else {
+  console.log("sdfsdafs sd fs");
+}
