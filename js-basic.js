@@ -126,9 +126,54 @@ console.log(c);
 
 //es6 function
 
-const hello = (a) => {
-  // const a 4 + 6;
-  console.log(a);
-};
+// const hello = (a) => {
+//   // const a 4 + 6;
+//   console.log(a);
+// };
+// // debugger; for debugging, we need to key in the word debugger
+// console.log(hello(45));
 
-console.log(hello(45));
+//Addint Math function//
+// const ans = 1;
+// const ans = Math.PI;
+// const ans = Math.round(4.1); will convert to the whole number on the lower front
+// const ans = Math.floor(4.9); this is for the greedy seller, will convert to higher number //4
+// const ans = Math.ceil(4.1);will convert that to the bigger number //5
+// const ans = Math.pow(5, 2); //25
+// const ans = Math.sqrt(25);
+// const ans = Math.min(54, 54, 2, 3, -5, 6, 7, 8, 9, 10);
+// const ans = Math.max(54, 54, 2, 3, -5, 6, 7, 8, 9, 10);
+// const ans = Math.random();// 0 - 0.9999999999999999999999
+// const ans = Math.random() * 100;
+// console.log(ans);
+
+// JS Operators - Comparison Operators//
+
+// const a = 5;
+// const b = 6;
+
+// Comparison Operators> == === != !== < <= >=
+
+// const ans = a === b;
+// const ans = a !== b;
+// const ans =  a > b;
+// const ans = a < b;
+// const ans = a <= b;
+// const ans = a >=b;
+
+//Logical operators - && || ! Ternary
+// Conditional statement  - if, else, else if, switch
+
+const hungry = false;
+// if (hungry) {
+// }
+// console.log("Eat Pizza");
+
+if (age >= 18) {
+  console.log("Welcome to the party");
+} else {
+  console.log("go home kiddo");
+}
+
+// age >= 18 ? console.log("welcome to the party") : console.log("go home kiddo")
+// Line 178 is the ternary way of writing if else using ternary
