@@ -197,15 +197,56 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 // Error Handling
 
-try {
-  const a = 5;
-  const b = a + "5";
-  console.log(b);
-} catch (err) {
-  if (err.message === "erc555") {
-  }
-  console.log(err);
-  //console.log("Hey sorry, something went wrong");
-} finally {
-  console.log("finally executed");
-}
+// try {
+//   const a = 5;
+//   const b = a + "5";
+//   console.log(b);
+// } catch (err) {
+//   if (err.message === "erc555") {
+//   }
+//   console.log(err);
+//   //console.log("Hey sorry, something went wrong");
+// } finally {
+//   console.log("finally executed");
+// }
+
+// Scheduling
+//  setTimeout - Clear Timeout - The below are two different ways of writing the same code
+
+const sayHello = () => {};
+console.log("hello there");
+const time = 1000;
+
+setTimeout(() => {
+  console.log("hello there");
+}, 1000);
+
+// setInterval - clear interval
+
+// let i = 0;
+// setInterval(() => {
+//   console.log(i++);
+// }, 3000);
+
+// let i = 0;
+// const clock = setInterval(() => {
+//   console.log(i++);
+// }, 1000);
+
+// clock;
+// const stopper = setTimeout(() => {
+//   clearInterval(clock);
+//   console.log("stopping the clock from settimeout");
+// }, timeout);
+
+let i = 0;
+const clock = setInterval(() => {
+  console.log(i++);
+}, 1000);
+
+const stopper = () => {
+  clearInterval(clock);
+};
+
+const setter = setTimeout(stopper, 10000);
+// clearTimeout(setter);
