@@ -192,3 +192,22 @@ if (animal === "cat") {
 else {
   console.log("sdfsdafs sd fs");
 }
+
+//switch
+
+switch (animal) {
+  case "cat":
+    console.log("meow");
+    break;
+
+  case "dog":
+    console.log("woof");
+    break;
+
+  case "bird":
+    console.log("tweet");
+    break;
+
+  default:
+    console.log("sdfsdafs sd fs");
+}
