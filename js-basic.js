@@ -209,17 +209,17 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 // } finally {
 //   console.log("finally executed");
 // }
-
+// ============================================================
 // Scheduling
 //  setTimeout - Clear Timeout - The below are two different ways of writing the same code
 
-const sayHello = () => {};
-console.log("hello there");
-const time = 1000;
+// const sayHello = () => {};
+// console.log("hello there");
+// const time = 1000;
 
-setTimeout(() => {
-  console.log("hello there");
-}, 1000);
+// setTimeout(() => {
+//   console.log("hello there");
+// }, 1000);
 
 // setInterval - clear interval
 
@@ -239,14 +239,23 @@ setTimeout(() => {
 //   console.log("stopping the clock from settimeout");
 // }, timeout);
 
-let i = 0;
-const clock = setInterval(() => {
-  console.log(i++);
-}, 1000);
+// let i = 0;
+// const clock = setInterval(() => {
+//   console.log(i++);
+// }, 1000);
 
-const stopper = () => {
-  clearInterval(clock);
+// const stopper = () => {
+//   clearInterval(clock);
+// };
+
+// const setter = setTimeout(stopper, 10000);
+// // clearTimeout(setter);
+
+// =========================================================
+
+const sayHello = () => {
+  console.log("hello there");
 };
 
-const setter = setTimeout(stopper, 10000);
-// clearTimeout(setter);
+setTimeout(sayHello, 3000);
+console.log(sayHello);
