@@ -180,34 +180,32 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 // //else if
 
-const animal = "bird";
-if (animal === "cat") {
-  console.log(meow);
-} else if (animal === "dog") {
-  console.log("woof woof");
-} else if (animal === "bird") {
-  console.log("twit");
-}
-// else(animal = "")
-else {
-  console.log("sdfsdafs sd fs");
-}
+// const animal = "bird";
+// if (animal === "cat") {
+//   console.log(meow);
+// } else if (animal === "dog") {
+//   console.log("woof woof");
+// } else if (animal === "bird") {
+//   console.log("twit");
+// }
+// // else(animal = "")
+// else {
+//   console.log("sdfsdafs sd fs");
+// }
 
 //switch
 
-switch (animal) {
-  case "cat":
-    console.log("meow");
-    break;
+// Error Handling
 
-  case "dog":
-    console.log("woof");
-    break;
-
-  case "bird":
-    console.log("tweet");
-    break;
-
-  default:
-    console.log("sdfsdafs sd fs");
+try {
+  const a = 5;
+  const b = a + "5";
+  console.log(b);
+} catch (err) {
+  if (err.message === "erc555") {
+  }
+  console.log(err);
+  //console.log("Hey sorry, something went wrong");
+} finally {
+  console.log("finally executed");
 }
