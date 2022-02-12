@@ -106,16 +106,29 @@ console.log(c);
 // // In array  we don't have key and value, we only have values, seperated by a comma.
 // console.log(arg[4]);
 
-function hello() {
-  const a = 4 + 6;
-  console.log(a);
-}
+// function hello() {
+//   const a = 4 + 6;
+//   console.log(a);
+// }
 
-console.log(hello);
-console.log(hello());
+// console.log(hello);
+// console.log(hello());
 // console.log(hello()); - This is invoking the function. Code runs from
 // top to bottom, and code only runs once.
 
 // console.log(hello); this is only calling the function, not invoking, which
 // basically means that it will not evaluate or run anything within the function.
 // in order to run the code, we need to invoke the function by '()'.
+
+// anonymous function
+// ()=>{}  - here parenthesis is the function and curly braces is the code
+// execution section
+
+//es6 function
+
+const hello = (a) => {
+  // const a 4 + 6;
+  console.log(a);
+};
+
+console.log(hello(45));
