@@ -49,7 +49,8 @@
 // console.log(b);
 
 // ==========================
-// Template literals - it allows you to write js code and html code and turn that into
+// Template literals -
+// it allows you to write js code and html code and turn that into
 // a string. Here, instead of using line 56, we use the tilde and dollar sign($) to
 // pass the variable and full stop. What ever needs to be printed, needs to be written
 // within the tilde
