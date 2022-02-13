@@ -50,4 +50,14 @@
 
 // ==========================
 // Template literals - it allows you to write js code and html code and turn that into
-// a string.
+// a string. Here, instead of using line 56, we use the tilde and dollar sign($) to
+// pass the variable and full stop. What ever needs to be printed, needs to be written
+// within the tilde
+
+const speak = (name, say) => {
+  // return name + "says" + say;
+  return `
+    ${name} would like to say ${say}. slsfljjflkljflfj
+    `;
+};
+console.log(speak("John", "Hello"));
