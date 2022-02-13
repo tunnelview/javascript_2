@@ -199,10 +199,18 @@
 // });
 // ====================================================================
 // FIND - SOME - EVERY
-const fruits = ["apple", "banana", "aorange", "pineapple"];
+// const fruits = ["apple", "banana", "aorange", "pineapple"];
 // const val = fruits.find(item => item.includes("e"));
 // const val = fruits.some((item) => item.includes("1e"));
-const val = fruits.every((item) => item.includes("1e"));
+// const val = fruits.every((item) => item.includes("1e"));
+
+// console.log(val);
+// =======================================================
+
+// Reduce
+const money = [100, 200, 300, 400, 500];
+const val = money.reduce((subt1, item) => {
+  return subt1 + item;
+}, 0);
 
 console.log(val);
-// =======================================================
