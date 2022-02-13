@@ -253,9 +253,9 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 // =========================================================
 
-const sayHello = () => {
-  console.log("hello there");
-};
+// const sayHello = () => {
+//   console.log("hello there");
+// };
 
-setTimeout(sayHello, 3000);
-console.log(sayHello);
+// setTimeout(sayHello, 3000);
+// console.log(sayHello);

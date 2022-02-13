@@ -55,39 +55,39 @@
 // pass the variable and full stop. What ever needs to be printed, needs to be written
 // within the tilde
 
-const speak = (name, say) => {
-  // return name + "says" + say;
-  return `
-    ${name} would like to say ${say}. slsfljjflkljflfj
-    `;
-};
-console.log(speak("John", "Hello"));
+// const speak = (name, say) => {
+//   // return name + "says" + say;
+//   return `
+//     ${name} would like to say ${say}. slsfljjflkljflfj
+//     `;
+// };
+// console.log(speak("John", "Hello"));
 // =========================================
 // Loops
-for (let i = 0; i <= 10; i++) {
-  console.log(i);
-}
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
 
-for (let i = 50; i < 0; i--) {
-  console.log(i);
-}
+// for (let i = 50; i < 0; i--) {
+//   console.log(i);
+// }
 
-for (let i = 0; i <= 10; i += 2) {
-  console.log(i);
-}
+// for (let i = 0; i <= 10; i += 2) {
+//   console.log(i);
+// }
 
-let i = 0;
-while (i < 10) {
-  console.log(i);
-  i++;
-}
+// let i = 0;
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
 
-let i = 0;
+// let i = 0;
 
-do {
-  console.log(i);
-  i++;
-} while (i < 10);
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 10);
 // =============================================================
 
 // for (let i = 0; i < 50; i++) {
@@ -97,11 +97,71 @@ do {
 //   }
 // }
 
-for (let i = 0; i < 50; i++) {
-  if (i % 2 == 0) {
-    console.log(i);
-    continue;
-    //line #103 will optimize the loop, because code flow is top to bottom,
-    // but because of the 'continue' it will only run the code till there.
-  }
-}
+// for (let i = 0; i < 50; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//     continue;
+//     //line #103 will optimize the loop, because code flow is top to bottom,
+//     // but because of the 'continue' it will only run the code till there.
+//   }
+// }
+
+// NUMBER
+// let a = "5.5";
+// a = parseInt(a);
+// a = parseFloat(a);
+// a = Number(a);
+// a = +a;
+// a = 35_456_456_898_432_463;
+//safe number
+//-2^53-1 to 2^53-1 - safe number in Java Script
+
+// let a = "5.5";
+// let a = "eeerrr";
+// // const b = a + 5;
+// console.log(isNaN(a));
+
+// STRING
+// const str = "Lorem SJLKSF dolor sit ametc.";
+// let val = str.length;
+// let val = str.toUpperCase();
+// let val = str.toLowerCase();
+
+// let val = str.lastIndexOf("d");
+// let val = str.replace("sam", "will");
+// let val = str.replaceAll ("sam", "will");
+
+// let val = str.substring(2,10);
+// let val = str.slice(2, 5); // this can also include the space
+// let val = str.slice(0, -2);
+// let val = str.charAt(11); // used to check what letter is at a particular index/position
+// let val = str.split("s") // this command will split the str into an array items, by using S, including the S
+
+// console.log(val);
+// =================================================
+
+// ARRAY
+//
+// const fruits = ["apple", "banana", "aorange", "pineapple"]; // adding item at the front and back
+// fruits.unshift("strawberry"); // adding item in the front
+// fruits.push("strawberry"); // adding item in back
+
+// fruits.shift(); // it removes the first item or take the item from the front
+// const val = fruits.pop(); // command used to remove the last item from array
+// fruits.pop();
+
+// fruits[2] = "strawberry"; // this portion tells us index of the item and also add the item on to that index position in the array
+// val = fruits[2]; // tell us the index of the item.
+
+// const val = fruits.splice(2, 2);
+// fruits.splice(2, 0, "strawberry");
+
+// val = fruits.slice(1, 3);
+
+// fruits.sort();
+
+const nums = [1, 20, 5, 68, 9, 10]; // please don't use sorting for numbers as it takes ASCII code into consideration
+
+nums.sort(); // sort function is good to be used for "strings and dates"
+
+console.log(nums);
