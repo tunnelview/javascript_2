@@ -208,9 +208,19 @@
 // =======================================================
 
 // Reduce
-const money = [100, 200, 300, 400, 500];
-const val = money.reduce((subt1, item) => {
-  return subt1 + item;
-}, 0);
+// const money = [100, 200, 300, 400, 500];
+// const val = money.reduce((subt1, item) => {
+//   return subt1 + item;
+// }, 0);
 
-console.log(val);
+// console.log(val);
+
+// ==========================================================
+// Exercise
+// 1. Crate an array size of 50, fill with random numbers between 1-100
+// 2. Calculate the total value out of array.
+// 3. Remove the duplicate items in the array.
+// 4. make 2 new arrays, one with the even numbers and one with the odd numbers.
+
+// Test -2
+// 1. Create an array size 50, fill with unique random numbers between 1-100
