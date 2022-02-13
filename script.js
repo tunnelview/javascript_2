@@ -88,3 +88,20 @@ do {
   console.log(i);
   i++;
 } while (i < 10);
+// =============================================================
+
+// for (let i = 0; i < 50; i++) {
+//   console.log(i);
+//   if (i === 5) {
+//     break;
+//   }
+// }
+
+for (let i = 0; i < 50; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+    continue;
+    //line #103 will optimize the loop, because code flow is top to bottom,
+    // but because of the 'continue' it will only run the code till there.
+  }
+}
