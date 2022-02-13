@@ -62,3 +62,29 @@ const speak = (name, say) => {
     `;
 };
 console.log(speak("John", "Hello"));
+// =========================================
+// Loops
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+for (let i = 50; i < 0; i--) {
+  console.log(i);
+}
+
+for (let i = 0; i <= 10; i += 2) {
+  console.log(i);
+}
+
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+
+let i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
