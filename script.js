@@ -160,8 +160,11 @@
 
 // fruits.sort();
 
-const nums = [1, 20, 5, 68, 9, 10]; // please don't use sorting for numbers as it takes ASCII code into consideration
+const num1 = [1, 20, 5, 68, 9, 10];
+// please don't use sorting for numbers as it takes ASCII code into consideration
 
-nums.sort(); // sort function is good to be used for "strings and dates"
+// nums.sort(); // sort function is good to be used for "strings and dates"
 
-console.log(nums);
+const newArg = [...num1]; // this is new style of overriding or creating a new array with the new value.
+newArg[0] = 100;
+console.log(num1, newArg);
