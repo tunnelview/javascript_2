@@ -160,11 +160,49 @@
 
 // fruits.sort();
 
-const num1 = [1, 20, 5, 68, 9, 10];
+// const num1 = [1, 20, 5, 68, 9, 10];
 // please don't use sorting for numbers as it takes ASCII code into consideration
 
 // nums.sort(); // sort function is good to be used for "strings and dates"
 
-const newArg = [...num1]; // this is new style of overriding or creating a new array with the new value.
-newArg[0] = 100;
-console.log(num1, newArg);
+// const newArg = [...num1]; // this is new style of overriding or creating a new array with the new value.
+// newArg[0] = 100;
+// console.log(num1, newArg);
+
+// ============================================
+// ARRAY LOOPS - Line 175 to 178 is traditional way running loop
+// const fruits = ["apple", "banana", "aorange", "pineapple"];
+// for (let i = 0; i < Array.length; i++) {
+//   console.log(fruits[i]);
+// }
+// ========================================
+
+//forEach
+
+//map
+// const newArg = fruits.map((a, i) => {
+//   console.log(a, i);
+//   return a.toUpperCase();
+// });
+
+//filter
+// const fruits = ["apple", "banana", "aorange", "pineapple"];
+// const newArg = fruits.filter((a) => {
+//   if (a.includes("e")) { // line 191 to 193 is written shortened
+//     return true;
+//   }
+// const newArg = fruits.filter((a) => a.includes("e")); // this is the shortned version
+
+//   if (a.length >= 6) {
+//     return a;
+//   }
+// });
+// ====================================================================
+// FIND - SOME - EVERY
+const fruits = ["apple", "banana", "aorange", "pineapple"];
+// const val = fruits.find(item => item.includes("e"));
+// const val = fruits.some((item) => item.includes("1e"));
+const val = fruits.every((item) => item.includes("1e"));
+
+console.log(val);
+// =======================================================
