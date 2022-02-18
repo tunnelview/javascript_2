@@ -225,11 +225,11 @@
 // Test -2
 // 1. Create an array size 50, fill with unique random numbers between 1-100
 
-const bag_of_numbers = [];
-console.log(Math.ceil(Math.random() * 100 + 2)); // Incorrect solutions
+// const bag_of_numbers = [];
+// console.log(Math.ceil(Math.random() * 100 + 2)); // Incorrect solutions
 
 // ================================================== 19th Feb 2022
-Exercise;
+// Exercise;
 // 1. Crate an array size of 50, fill with random numbers between 1-100
 
 console.log("first");
@@ -239,3 +239,21 @@ for (let i = (i = 0); i < 50; i++) {
   arr.push(random);
 }
 console.log(arr);
+
+// 2. Calculate the total value out of array.
+console.log("second");
+const initialValue = 0;
+const totalSum = arr.reduce(
+  (previous, current) => previous + current,
+  initialValue
+);
+console.log(totalSum);
+
+// 3. Remove the duplicate items in the array.
+const nonDuplicate = [];
+arr.forEach((element) => {
+  if (!nonDuplicate.includes(element)) {
+    nonDuplicate.push(element);
+  }
+});
+console.log(nonDuplicate);
