@@ -232,48 +232,48 @@
 // Exercise;
 // 1. Crate an array size of 50, fill with random numbers between 1-100
 
-console.log("first");
-let arr = [];
-for (let i = 0; i < 50; i++) {
-  let random = Math.floor(Math.random() * 100 + 1);
-  arr.push(random);
-}
-console.log(arr);
+// console.log("first");
+// let arr = [];
+// for (let i = 0; i < 50; i++) {
+//   let random = Math.floor(Math.random() * 100 + 1);
+//   arr.push(random);
+// }
+// console.log(arr);
 
 // 2. Calculate the total value out of array.
-console.log("second");
-const initialValue = 0;
-const totalSum = arr.reduce(
-  (previous, current) => previous + current,
-  initialValue
-);
-console.log(totalSum);
+// console.log("second");
+// const initialValue = 0;
+// const totalSum = arr.reduce(
+//   (previous, current) => previous + current,
+//   initialValue
+// );
+// console.log(totalSum);
 
 // 3. Remove the duplicate items in the array.
-const nonDuplicate = [];
-arr.forEach((element) => {
-  if (!nonDuplicate.includes(element)) {
-    nonDuplicate.push(element);
-  }
-});
-console.log(nonDuplicate);
+// const nonDuplicate = [];
+// arr.forEach((element) => {
+//   if (!nonDuplicate.includes(element)) {
+//     nonDuplicate.push(element);
+//   }
+// });
+// console.log(nonDuplicate);
 
 // 4. make 2 new arrays, one with the even numbers and one with the odd numbers.
-const even = [];
-const odd = [];
-arr.forEach((element) =>
-  element % 2 == 0 ? even.push(element) : odd.push(element)
-);
-console.log(even);
-console.log(odd);
+// const even = [];
+// const odd = [];
+// arr.forEach((element) =>
+//   element % 2 == 0 ? even.push(element) : odd.push(element)
+// );
+// console.log(even);
+// console.log(odd);
 // Question mark ? means - is this true? and : colon means else
 
 // 1. Create an array size 50, fill with unique random numbers between 1-100
-let randoms = [];
-for (let i = 0; i < randoms.length; i++) {
-  let uniqueNumber = Math.floor(Math.random() * 100 + 1);
-  if (randoms.includes(uniqueNumber));
-  continue;
-  randoms.push(uniqueNumber);
-}
-console.log(randoms);
+// let randoms = [];
+// for (let i = 0; i < randoms.length; i++) {
+//   let uniqueNumber = Math.floor(Math.random() * 100 + 1);
+//   if (randoms.includes(uniqueNumber));
+//   continue;
+//   randoms.push(uniqueNumber);
+// }
+// console.log(randoms);

@@ -259,3 +259,35 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 // setTimeout(sayHello, 3000);
 // console.log(sayHello);
+
+// OBJECT METHODS
+// obJEt, PROPERTY, METHOD
+
+const person = {
+  fName: "Prem",
+  lName: "Acharya",
+};
+
+//override the value
+person.fName = "Stranger";
+const name = person.fName;
+
+//add new property
+person.add = "Sydney";
+
+//delete property
+
+delete person.lName;
+console.log(person);
+
+// clone the object
+const newPerson = { ...person };
+newPerson.add = "Australia";
+console.log(person, newPerson);
+
+// Date Object
+
+// const val = new Date();
+// // const val1 = val.getDate();
+// const val1 = val.getFullYear();
+// console.log(val.toLocaleDateString());
