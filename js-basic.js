@@ -263,27 +263,27 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 // OBJECT METHODS
 // obJEt, PROPERTY, METHOD
 
-const person = {
-  fName: "Prem",
-  lName: "Acharya",
-};
+// const person = {
+//   fName: "Prem",
+//   lName: "Acharya",
+// };
 
-//override the value
-person.fName = "Stranger";
-const name = person.fName;
+// //override the value
+// person.fName = "Stranger";
+// const name = person.fName;
 
-//add new property
-person.add = "Sydney";
+// //add new property
+// person.add = "Sydney";
 
-//delete property
+// //delete property
 
-delete person.lName;
-console.log(person);
+// delete person.lName;
+// console.log(person);
 
-// clone the object
-const newPerson = { ...person };
-newPerson.add = "Australia";
-console.log(person, newPerson);
+// // clone the object
+// const newPerson = { ...person };
+// newPerson.add = "Australia";
+// console.log(person, newPerson);
 
 // Date Object
 
@@ -291,3 +291,46 @@ console.log(person, newPerson);
 // // const val1 = val.getDate();
 // const val1 = val.getFullYear();
 // console.log(val.toLocaleDateString());
+
+// Object Oriented Programming Paradigm
+
+// const person = {
+//   fName: "Shibin",
+//   lName: "Abraham",
+//   occ: "Developer",
+//   bio: function () {
+//     // console.log("Hello from " + this.fName);
+//     return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
+//   },
+// };
+// console.log(person.bio());
+
+// const person = {
+//     fName: "Shibin",
+//     lName: "Abraham",
+//     occ: "Developer",
+//     bio: function () {
+//       // console.log("Hello from " + this.fName);
+//       return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
+//     },
+//   };
+//   console.log(person.bio());
+
+// Below is the Object Oriented Programming Paradigm in Java Script
+
+const userBio = (fn, ln, oc) => {
+  return {
+    fName: fn,
+    lName: ln,
+    occ: oc,
+
+    bio: function () {
+      return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
+    },
+  };
+};
+const premBio = userBio("Shibin", "Abraham", "Developer \n");
+const jessicaBio = userBio("Jessica", "James", "Developer\n");
+const angeloBio = userBio("Angelo", "Rodri", "Developer");
+
+console.log(premBio.bio(), jessicaBio.bio(), angeloBio.bio());
