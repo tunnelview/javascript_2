@@ -257,3 +257,13 @@ arr.forEach((element) => {
   }
 });
 console.log(nonDuplicate);
+
+// 4. make 2 new arrays, one with the even numbers and one with the odd numbers.
+const even = [];
+const odd = [];
+arr.forEach((element) =>
+  element % 2 == 0 ? even.push(element) : odd.push(element)
+);
+console.log(even);
+console.log(odd);
+// Question mark ? means - is this true? and : colon means else
