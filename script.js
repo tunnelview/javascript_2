@@ -224,3 +224,10 @@
 
 // Test -2
 // 1. Create an array size 50, fill with unique random numbers between 1-100
+
+const bag_of_numbers = [];
+console.log(Math.ceil(Math.random() * 100 + 2));
+
+// ================================================== 19th Feb 2022
+Exercise;
+// 1. Crate an array size of 50, fill with random numbers between 1-100
