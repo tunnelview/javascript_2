@@ -267,3 +267,13 @@ arr.forEach((element) =>
 console.log(even);
 console.log(odd);
 // Question mark ? means - is this true? and : colon means else
+
+// 1. Create an array size 50, fill with unique random numbers between 1-100
+let randoms = [];
+for (let i = 0; i < randoms.length; i++) {
+  let uniqueNumber = Math.floor(Math.random() * 100 + 1);
+  if (randoms.includes(uniqueNumber));
+  continue;
+  randoms.push(uniqueNumber);
+}
+console.log(randoms);
