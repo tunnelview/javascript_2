@@ -234,8 +234,8 @@
 
 console.log("first");
 let arr = [];
-for (let i = (i = 0); i < 50; i++) {
-  let random = math.floor(math.random() * 100 + 1);
+for (let i = 0; i < 50; i++) {
+  let random = Math.floor(Math.random() * 100 + 1);
   arr.push(random);
 }
 console.log(arr);
