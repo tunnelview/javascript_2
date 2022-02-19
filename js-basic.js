@@ -375,3 +375,11 @@ const calculator = (a, b, fn) => {
 };
 console.log(calculator(5, 6, add));
 console.log(calculator(5, 6, subt));
+
+// if (type === "subtract"){ this is extra work, instead of this line number 373, pass the function as the parameter
+// return subt(a,b);
+// }
+
+// if (type === "multiply"){
+// return subt(a,b);
+// }
