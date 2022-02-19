@@ -318,19 +318,39 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 // Below is the Object Oriented Programming Paradigm in Java Script
 
-const userBio = (fn, ln, oc) => {
-  return {
-    fName: fn,
-    lName: ln,
-    occ: oc,
+// const userBio = (fn, ln, oc) => {
+//   return {
+//     fName: fn,
+//     lName: ln,
+//     occ: oc,
 
-    bio: function () {
-      return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
-    },
-  };
-};
-const premBio = userBio("Shibin", "Abraham", "Developer \n");
-const jessicaBio = userBio("Jessica", "James", "Developer\n");
-const angeloBio = userBio("Angelo", "Rodri", "Developer");
+//     bio: function () {
+//       return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
+//     },
+//   };
+// };
+// const premBio = userBio("Shibin", "Abraham", "Developer \n");
+// const jessicaBio = userBio("Jessica", "James", "Developer\n");
+// const angeloBio = userBio("Angelo", "Rodri", "Developer");
 
-console.log(premBio.bio(), jessicaBio.bio(), angeloBio.bio());
+// console.log(premBio.bio(), jessicaBio.bio(), angeloBio.bio());
+
+// Class based OOP paradigm in Java Script
+
+class PersonBio {
+  constructor(fn, ln, oc) {
+    this.fName = fn;
+    this.lName = ln;
+    this.occ = oc;
+  }
+
+  bio() {
+    return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
+  }
+}
+
+const shibinBio = new PersonBio("Shibin", "Abraham", "Developer");
+console.log(shibinBio.bio());
+
+const jessicaBio = new PersonBio("Jessica", "James", "Super Developer");
+console.log(jessicaBio.bio());
