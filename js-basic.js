@@ -367,14 +367,14 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 //Functional Programming - HIGH ORDER FUNCTION
 
-const add = (a, b) => a + b;
+/*const add = (a, b) => a + b;
 const subt = (a, b) => a - b;
 
 const calculator = (a, b, fn) => {
   return fn(a, b);
 };
 console.log(calculator(5, 6, add));
-console.log(calculator(5, 6, subt));
+console.log(calculator(5, 6, subt));*/
 
 // if (type === "subtract"){ this is extra work, instead of this line number 373, pass the function as the parameter
 // return subt(a,b);
@@ -386,10 +386,13 @@ console.log(calculator(5, 6, subt));
 
 // Recursion - Recursion means, calling the fuction from within the fuction
 
-const count = (n) => {
+/*const count = (n) => {
   console.log(n);
   if (n === 100) return;
 
   count(n + 1);
 };
-count(10);
+count(10);*/
+
+// ====================================================================
+// DOM
