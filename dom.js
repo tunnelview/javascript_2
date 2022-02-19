@@ -45,3 +45,15 @@ const firMe = () => {
 };
 const btnElm = document.querySelector("#me");
 btnElm.addEventListener("click", firMe); // click will invoke the function here
+
+btnElm.addEventListener("click", firMe);
+
+btnElm.addEventListener("click", firMe);
+
+// setTimeout(() => {
+//     clsELM.removeEventListener("click", () => );
+// }
+
+document.getElementById("update").addEventListener("click", () => {
+  console.log(clsELM.classList); // to show the already existing classname for that element
+});
