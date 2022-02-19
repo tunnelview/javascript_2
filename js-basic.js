@@ -337,20 +337,41 @@ it is var. var can be overridden, 'const' and 'let' cannot be overridden*/
 
 // Class based OOP paradigm in Java Script
 
-class PersonBio {
-  constructor(fn, ln, oc) {
-    this.fName = fn;
-    this.lName = ln;
-    this.occ = oc;
-  }
+// class PersonBio {
+//   constructor(fn, ln, oc) {
+//     this.fName = fn;
+//     this.lName = ln;
+//     this.occ = oc;
+//   }
 
-  bio() {
-    return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
-  }
-}
+//   bio() {
+//     return `Hi everyone, ${this.fName} ${this.lName} is a ${this.occ}`;
+//   }
+// }
 
-const shibinBio = new PersonBio("Shibin", "Abraham", "Developer");
-console.log(shibinBio.bio());
+// const shibinBio = new PersonBio("Shibin", "Abraham", "Developer");
+// console.log(shibinBio.bio());
 
-const jessicaBio = new PersonBio("Jessica", "James", "Super Developer");
-console.log(jessicaBio.bio());
+// const jessicaBio = new PersonBio("Jessica", "James", "Super Developer");
+// console.log(jessicaBio.bio());
+
+// =========================================
+// Functional Programming
+// Side effects // Function
+
+// const add = (a, b) => {
+//   return a + b;
+// };
+// const val = add(5, 6);
+// console.log(val);
+
+//Functional Programming - HIGH ORDER FUNCTION
+
+const add = (a, b) => a + b;
+const subt = (a, b) => a - b;
+
+const calculator = (a, b, fn) => {
+  return fn(a, b);
+};
+console.log(calculator(5, 6, add));
+console.log(calculator(5, 6, subt));
