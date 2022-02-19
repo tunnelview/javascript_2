@@ -383,3 +383,13 @@ console.log(calculator(5, 6, subt));
 // if (type === "multiply"){
 // return subt(a,b);
 // }
+
+// Recursion - Recursion means, calling the fuction from within the fuction
+
+const count = (n) => {
+  console.log(n);
+  if (n === 100) return;
+
+  count(n + 1);
+};
+count(10);
