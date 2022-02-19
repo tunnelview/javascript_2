@@ -25,10 +25,23 @@
 // clsELM.innerText  = "Hello";
 // clsElm.innerHTML = <h1>Hello</h1>
 
-clsELM.setAttribute("style", "color:red");
+// clsELM.setAttribute("style", "color = red");
+// const anchor = document.querySelector("a");
+// anchor.setAttribute("target", "_black");
+// anchor.style.color = "red";
+// anchor.style.fontSize = "30px";
+// anchor.style.textDecoration = "none";
 
-const anchor = document.querySelector("a");
-anchor.setAttribute("target", "_black");
-anchor.style.color = "red";
-anchor.style.fontSize = "30px";
-anchor.style.textDecoration = "none";
+const clsELM = document.querySelector("#name");
+clsELM.addEventListener("click", () => {
+  anchor.style.color = "red";
+  anchor.style.fontSize = "30px";
+  anchor.style.textDecoration = "none";
+  clsELM.innerText = "Gary";
+});
+
+const firMe = () => {
+  alert("you just fired me");
+};
+const btnElm = document.querySelector("#me");
+btnElm.addEventListener("click", firMe); // click will invoke the function here
